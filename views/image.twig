@@ -1,0 +1,11 @@
+{% extends 'templates/app.twig' %}
+
+{% block main %} 
+	<div class="row">
+		<div class="ten columns offset-by-one">
+			<figure>
+ 				<img src="{{ app.uploadcare.getFile(image.url).getUrl }}" alt="">
+			</figure>
+		</div>
+	</div>
+{% endblock %}
